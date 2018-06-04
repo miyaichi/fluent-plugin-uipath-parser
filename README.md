@@ -8,6 +8,10 @@ install it yourself as:
 
     $ fluent-gem install fluent-plugin-uipath-parser
 
+## Configration
+* **encoding** (string) (optional): Encoding of log file.
+  * Default value: Windows-31J.
+
 ## Example Configuration
 
 ```
@@ -16,6 +20,7 @@ install it yourself as:
   path "#{ENV['LOCALAPPDATA']}/UiPath/Logs/%Y-%m-%d_Execution.log"
   pos_file "#{ENV['LOCALAPPDATA']}/UiPath/Logs/Execution_log.pos"
   format uipath
+  encoding Windows-31J
   tag uipath
 </source>
 
